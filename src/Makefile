@@ -1,7 +1,7 @@
 PRODUCT := fps
 CXX := g++
 LINKER := g++
-INCDIRS := -I.
+INCDIRS := -I. -I./include
 CXXFLAGS := -std=c++11 -Wall -Wextra
 
 BINDIR= ../bin
