@@ -17,7 +17,7 @@ class FileHandler
 {
 	public:
 		~FileHandler();
-		static FileHandler* Instance();
+		static FileHandler* Instance(); // todo, replace it by static FileHandler& Instance(); and return a static object
 
 	private:
 		FileHandler();
