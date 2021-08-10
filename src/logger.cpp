@@ -18,6 +18,7 @@ Logger::~Logger()
 
 Logger* Logger::Instance()
 {
+	// todo, return a static object and replace the methode definition by : static Logger& Instance(); 
 	if( !m_pInstance )
 	{
 		std::lock_guard<std::mutex> guard( m_sMutex);
