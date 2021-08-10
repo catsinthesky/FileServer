@@ -12,6 +12,11 @@ FileHandler::FileHandler()
 
 FileHandler::~FileHandler()
 {
+	if( m_pInstance != 0 )
+	{
+		delete m_pInstance;
+		m_pInstance = 0;
+	}
 }
 
 FileHandler* FileHandler::Instance()
